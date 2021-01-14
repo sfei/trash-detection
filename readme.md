@@ -56,8 +56,14 @@ Annotations are bundled with our dataset zip file, found at [insert link](https:
 Cropped image data and annotation data (stored as CSV) can be found at:
 [Annotations and Image Data](http://nextcloud.sfei.org/index.php/s/DRpy3qQaZxpyMXA)
 
-Trained trash detection m odel can be found at:
-[Model Files](http://nextcloud.sfei.org/index.php/s/ojrqbAnyTKS9TGK)
+TensorFlow records created using cropped images and annotation data:
+[TensorFlow Records](http://nextcloud.sfei.org/index.php/s/PcBZ3DR7Pt3DjTk)
+
+Trained trash detection model files can be found at:
+[Model Files](http://nextcloud.sfei.org/index.php/s/KP4yZ4Nd93bmWBf)
+
+Trained trash detection model files in a TensorFlow serving model format can be found at:
+[TF Serving Model Files](http://nextcloud.sfei.org/index.php/s/myAZbArckS6CiNY)
 
 Base model used for transfer learning:
 [faster_rcnn_inception_resnet_v2_atrous_coco](http://nextcloud.sfei.org/index.php/s/Fsjz7EC5yLBFbaE)

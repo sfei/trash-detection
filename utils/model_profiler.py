@@ -23,17 +23,17 @@ import pandas as pd
 from PIL import Image
 
 # Add Object detection API to Python system path list.
-sys.path.append(r'[Object detection API path]\research')
-sys.path.append(r'[Object detection API path]\research\slim')
+sys.path.append(r'[OBJECT DETECTION API PATH]\research')
+sys.path.append(r'[OBJECT DETECTION API PATH]\research\slim')
 
 # Load tensorflow and relevant utilities.
 import tensorflow as tf
 from visualization_utils import visualize_boxes_and_labels_on_image_array
 from object_detection.utils import label_map_util
 
-MODEL_PATH = 'Path to model files'
-IMG_PATH = 'Path to image'
-IMG_OUT_PATH = 'Path to store image with bouding box info'
+MODEL_PATH = 'PATH TO MODEL FILES'
+IMG_PATH = 'PATH TO IMAGE'
+IMG_OUT_PATH = 'PATH TO STORE IMAGE WITH BOUDING BOX INFO'
 NUM_CLASSES = 3
 
 class TrashClassifier():
@@ -112,9 +112,6 @@ def gen_classified_image(trash_classifier, category_index, img_in_path, img_out_
 
     # Get bounding boxes
     (boxes, scores, classes, num) = trash_classifier.get_classification(img_np)
-    # print("classifier num: {}".format(num))
-    # print("classifier classes: {}".format(classes))
-    # print("classifier scores: {}".format(scores))
 
     # Draw bounding boxes on image
     img_out_np = visualize_boxes_and_labels_on_image_array(

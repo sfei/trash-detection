@@ -38,9 +38,10 @@ from object_detection.utils import dataset_util
 
 
 # Data paths
-DATA_PATH = 'Path to data'
-CROPPED_IMAGES_PATH = 'Path to cropped images'
-CROPPED_IMAGE_DIR = 'Path to cropped images'
+DATA_PATH = 'PATH TO DATA'
+CROPPED_IMAGES_PATH = 'PATH TO CROPPED IMAGES'
+CROPPED_IMAGE_DIR = 'PATH TO CROPPED IMAGES'
+RECORDS_PATH = 'PATH TO TF RECORDS FOLDER'
 
 # Array for image paths
 IMAGE_PATHS = []
@@ -515,8 +516,8 @@ def gen_tfrecords():
     (train_set, test_set) = gen_imagesets(df,split)
 
     # Write training data
-    original_images_path = 'Path to cropped images'
-    tf_record_path = 'Path to store TensorFlow records.'
+    original_images_path = CROPPED_IMAGES_PATH
+    tf_record_path = RECORDS_PATH
     tf_record_output_file_path = os.path.join(tf_record_path,'train.record')
     writer = tf.python_io.TFRecordWriter(tf_record_output_file_path)
     grouped = group_df_by_column(train_set, 'filename')

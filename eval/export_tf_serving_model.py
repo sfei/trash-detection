@@ -26,8 +26,8 @@ import sys
 import os
 
 # Add TensorFlow model API to python library path, including slim subdirectory
-sys.path.append(r'[Path to Object Detection API]\research')
-sys.path.append(r'[Path to Object Detection API]\research\slim')
+sys.path.append(r'[PATH TO OBJECT DETECTION API]\research')
+sys.path.append(r'[PATH TO OBJECT DETECTION API]\research\slim')
 
 # Import TensorFlow and other scientific libraries
 import tensorflow as tf
@@ -43,8 +43,9 @@ from object_detection.utils.config_util import get_configs_from_pipeline_file
 from object_detection import exporter
 
 # Input data paths
-TEST_IMAGES_PATH = 'Path to cropped images'
-MODEL_PATH = 'Path to model files'
+TEST_IMAGES_PATH = 'PATH TO CROPPED IMAGES'
+MODEL_PATH = 'PATH TO MODEL FILES'
+OUTPUT_DIR = 'PATH TO OUTPUT DIRECTORY'
 NUM_CLASSES = 3
 
 # TF Serving Model Export Directory
@@ -142,7 +143,7 @@ def main():
     """
 
     # Configuration for model to be exported
-    config_pathname = os.path.join(MODEL_PATH,'model','pipeline.config')
+    config_pathname = os.path.join(MODEL_PATH,'pipeline.config')
 
     # Input checkpoint for the model to be exported
     # Path to the directory which consists of the saved model on disk (see above)
@@ -159,15 +160,12 @@ def main():
     # Model Version
     model_version_id = 1
 
-    # Output Directory
-    output_directory = "PATH TO OUTPUT DIRECTORY"
-
     # Export model for serving
     exporter.export_inference_graph(
         input_type='image_tensor',
         pipeline_config=pipeline_proto,
         trained_checkpoint_prefix=input_checkpoint,
-        output_directory=output_directory
+        output_directory=OUTPUT_DIR
     )
 
 if __name__ == '__main__':
