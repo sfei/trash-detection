@@ -1,0 +1,8 @@
+# Python cache folders
+__pycache__
+
+# Pyc files just in case
+*.pyc
+
+# Config files
+config.ini

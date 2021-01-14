@@ -1,0 +1,15 @@
+item {
+ id: 1
+ name: 'plastic'
+ display_name: 'plastic'
+}
+item {
+ id: 2
+ name: 'not-plastic'
+ display_name: 'not-plastic'
+}
+item {
+ id: 3
+ name: 'unknown'
+ display_name: 'unknown'
+}

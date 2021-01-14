@@ -1,0 +1,5 @@
+# Training scripts overview
+- model_main.py: Obtained from [tensorflow object detection library](https://github.com/tensorflow/models/blob/master/research/object_detection/export_inference_graph.py) (August 2018). Primary script used to run model training.
+- pascal_lavel_map.pbtxt: Protobuffer text file containing label name and id information. Referenced in pipeline.config.
+- pipeline.config: Contains hyperparameter and training parameters for the [faster_rcnn_inception_resnet_v2_atrous_coco](http://nextcloud.sfei.org/index.php/s/Fsjz7EC5yLBFbaE) model (circa 2018), included for convinience. If you choose to use another base model for transfer learning you'll need to replace this with the respective pipeline.config file.
+- run_training.cmd: Windows bash script for starting the training process. Used as a convienience for faster iterations.
