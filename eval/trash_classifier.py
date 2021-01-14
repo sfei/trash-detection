@@ -40,8 +40,8 @@ from visualization_utils import visualize_boxes_and_labels_on_image_array
 from object_detection.utils import label_map_util
 
 # Input data paths
-TEST_IMAGES_PATH = 'Path to cropped images'
-MODEL_PATH = 'Path to model files'
+TEST_IMAGES_PATH = 'PATH TO CROPPED IMAGES'
+MODEL_PATH = 'PATH TO MODEL FILES'
 NUM_CLASSES = 3
 
 class TrashClassifier():

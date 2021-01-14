@@ -94,8 +94,8 @@ python export_inference_graph \
 
 # Append python path
 import sys
-sys.path.append(r'[Path to Object Detection API]\research')
-sys.path.append(r'[Path to Object Detection API]\research\slim')
+sys.path.append(r'[PATH TO OBJECT DETECTION API]\research')
+sys.path.append(r'[PATH TO OBJECT DETECTION API]\research\slim')
 
 import tensorflow as tf
 from google.protobuf import text_format

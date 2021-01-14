@@ -33,9 +33,9 @@ The basic installation process follows:
 ## Running
 
 Our model building and evaluation workflow went as follows:
-1. Train using trainers/model_main.py, parameters are managed with pipeline.config
-2. Monitor model training using Tensorboard
-3. Use eval/test_checkpoint.py to export the model inference graph from a current checkpoint
+1. Train using trainers/model_main.py, parameters are managed with pipeline.config. We've included a windows bash script for initiating this process, see trainers/run_training.cmd
+2. Monitor model training using Tensorboard ([see Tensorboard documentation](https://www.tensorflow.org/tensorboard))
+3. Use eval/export_checkpoint.py to export the model inference graph from a current checkpoint
 4. Use eval/trash_classifier.py to run an exported model over novel imagery.
 
 ## Directory Structure
@@ -49,8 +49,6 @@ There are three core directories:
 ## Annotation
 
 Initial annotations for the trash detection project were created using [LabelImg](https://github.com/tzutalin/labelImg). These annotations were stored in the PascalVOC format (XML files) but have since been converted into a CSV file. For other machine learning projects we've begun using [CVAT](https://github.com/openvinotoolkit/cvat) for annotation work.
-
-Annotations are bundled with our dataset zip file, found at [insert link](https://sfei.org)
 
 ## Data and Model Files
 Cropped image data and annotation data (stored as CSV) can be found at:

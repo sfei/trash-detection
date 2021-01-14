@@ -20,8 +20,8 @@ from __future__ import print_function
 
 # Import paths for tensorflow model files
 import sys
-sys.path.append(r'[Path to Object Detection API]\research')
-sys.path.append(r'[Path to Object Detection API]\research\slim')
+sys.path.append(r'[PATH TO OBJECT DETECTION API]\research')
+sys.path.append(r'[PATH TO OBJECT DETECTION API]\research\slim')
 
 from absl import flags
 
