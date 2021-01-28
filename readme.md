@@ -2,6 +2,8 @@
 
 The Trash Detection git repository contains a variety of scripts and tools for generating data sets, initiating the TensorFlow model building process, exporting model files, and running predictions on new sample data.
 
+More information about the project can be found at [our Trash Monitoring project website](http://trashmonitoring.org/).
+
 ## Software Dependencies
 
 Trash detection scripts were developed and run using TensorFlow 1.13.1 and the TensorFlow [Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)]. Unfortunately Google has revised the Object Detection API github repository and we could not successfully find an appropriate version that pairs with TF 1.13.1. 
@@ -52,16 +54,16 @@ Initial annotations for the trash detection project were created using [LabelImg
 
 ## Data and Model Files
 Cropped image data and annotation data (stored as CSV) can be found at:
-[Annotations and Image Data](http://nextcloud.sfei.org/index.php/s/DRpy3qQaZxpyMXA)
+[Annotations and Image Data](http://filecloud.sfei.org/index.php/s/DRpy3qQaZxpyMXA)
 
 TensorFlow records created using cropped images and annotation data:
-[TensorFlow Records](http://nextcloud.sfei.org/index.php/s/PcBZ3DR7Pt3DjTk)
+[TensorFlow Records](http://filecloud.sfei.org/index.php/s/PcBZ3DR7Pt3DjTk)
 
 Trained trash detection model files can be found at:
-[Model Files](http://nextcloud.sfei.org/index.php/s/KP4yZ4Nd93bmWBf)
+[Model Files](http://filecloud.sfei.org/index.php/s/KP4yZ4Nd93bmWBf)
 
 Trained trash detection model files in a TensorFlow serving model format can be found at:
-[TF Serving Model Files](http://nextcloud.sfei.org/index.php/s/myAZbArckS6CiNY)
+[TF Serving Model Files](http://filecloud.sfei.org/index.php/s/myAZbArckS6CiNY)
 
 Base model used for transfer learning:
-[faster_rcnn_inception_resnet_v2_atrous_coco](http://nextcloud.sfei.org/index.php/s/Fsjz7EC5yLBFbaE)
+[faster_rcnn_inception_resnet_v2_atrous_coco](http://filecloud.sfei.org/index.php/s/Fsjz7EC5yLBFbaE)
