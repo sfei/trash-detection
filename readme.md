@@ -53,6 +53,9 @@ There are three core directories:
 Initial annotations for the trash detection project were created using [LabelImg](https://github.com/tzutalin/labelImg). These annotations were stored in the PascalVOC format (XML files) but have since been converted into a CSV file. For other machine learning projects we've begun using [CVAT](https://github.com/openvinotoolkit/cvat) for annotation work.
 
 ## Data and Model Files
+Full original dataset, includes un-cropped drone images, annotations in PascalVOC format, and orthorectified images for all associated site surveys:
+[Full Original Dataset](https://filecloud.sfei.org/index.php/s/AELpbMnQfzjfTYX)
+
 Cropped image data and annotation data (stored as CSV) can be found at:
 [Annotations and Image Data](http://filecloud.sfei.org/index.php/s/DRpy3qQaZxpyMXA)
 
